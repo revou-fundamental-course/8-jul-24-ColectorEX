@@ -1,11 +1,11 @@
 // File: JS/script.js
 
 // Menunggu sampai DOM selesai dimuat
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('Form-BMI');
     const output = document.getElementById('output');
 
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function (event) {
         event.preventDefault(); // Mencegah form dari submit default
 
         // Mengambil nilai dari inputan form
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Menangani tombol reset untuk menghapus hasil sebelumnya
-    form.addEventListener('reset', function() {
+    form.addEventListener('reset', function () {
         output.innerHTML = '';
     });
 });
